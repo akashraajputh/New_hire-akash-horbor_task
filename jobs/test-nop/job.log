@@ -1,0 +1,3 @@
+Trial json-transform__89XgaXb failed: 
+Docker compose down failed: 
+Not retrying trial because the maximum number of retries has been reached

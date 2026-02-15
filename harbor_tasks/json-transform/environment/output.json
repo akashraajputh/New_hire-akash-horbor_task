@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "city": "New York"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "city": "Los Angeles"
+  },
+  {
+    "id": 3,
+    "name": "Bob Johnson",
+    "city": "Chicago"
+  },
+  {
+    "id": 4,
+    "name": "Alice Williams",
+    "city": "Houston"
+  },
+  {
+    "id": 5,
+    "name": "Charlie Brown",
+    "city": "Phoenix"
+  }
+]

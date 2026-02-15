@@ -1,0 +1,5 @@
+Trial json-transform__Rubkzat failed: The bearer_token client option must be set either by passing bearer_token to the client or by setting the RUNLOOP_API_KEY environment variable
+Failed to download logs to jobs\test-oracle-runloop\json-transform__Rubkzat\agent
+Convention artifacts dir not found or download failed (best-effort)
+Devbox not found. Please build the environment first.
+Not retrying trial because the maximum number of retries has been reached

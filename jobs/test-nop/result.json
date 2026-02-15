@@ -1,0 +1,27 @@
+{
+    "id": "00f3f566-4be2-46ea-8b51-e05d85a534ec",
+    "started_at": "2026-02-15T19:59:36.004411",
+    "finished_at": "2026-02-15T19:59:36.039241",
+    "n_total_trials": 1,
+    "stats": {
+        "n_trials": 1,
+        "n_errors": 1,
+        "evals": {
+            "nop__adhoc": {
+                "n_trials": 0,
+                "n_errors": 1,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "reward_stats": {},
+                "exception_stats": {
+                    "NotImplementedError": [
+                        "json-transform__89XgaXb"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "id": "7cbf3359-b39f-4116-b5b9-b120a97d7853",
+    "task_name": "json-transform",
+    "trial_name": "json-transform__Rubkzat",
+    "trial_uri": "file:///E:/harbor_task/jobs/test-oracle-runloop/json-transform__Rubkzat",
+    "task_id": {
+        "path": "harbor_tasks\\json-transform"
+    },
+    "source": null,
+    "task_checksum": "84324aa4cfde1deb9f7f391ad37f69e36fcef6f4b20eccea162f4f1de6b04155",
+    "config": {
+        "task": {
+            "path": "harbor_tasks\\json-transform",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "json-transform__Rubkzat",
+        "trials_dir": "jobs\\test-oracle-runloop",
+        "timeout_multiplier": 1.0,
+        "agent": {
+            "name": "oracle",
+            "import_path": null,
+            "model_name": null,
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {}
+        },
+        "environment": {
+            "type": "runloop",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "e7901946-5893-4578-9d89-68757907bbde"
+    },
+    "agent_info": {
+        "name": "oracle",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": null,
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "RunloopError",
+        "exception_message": "The bearer_token client option must be set either by passing bearer_token to the client or by setting the RUNLOOP_API_KEY environment variable",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"E:\\harbor_task\\harbor\\src\\harbor\\trial\\trial.py\", line 470, in run\n    await self._setup_environment()\n  File \"E:\\harbor_task\\harbor\\src\\harbor\\trial\\trial.py\", line 203, in _setup_environment\n    await self._start_environment_with_retry()\n  File \"E:\\harbor_task\\harbor\\.venv\\Lib\\site-packages\\tenacity\\asyncio\\__init__.py\", line 189, in async_wrapped\n    return await copy(fn, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\harbor_task\\harbor\\.venv\\Lib\\site-packages\\tenacity\\asyncio\\__init__.py\", line 111, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\harbor_task\\harbor\\.venv\\Lib\\site-packages\\tenacity\\asyncio\\__init__.py\", line 153, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\harbor_task\\harbor\\.venv\\Lib\\site-packages\\tenacity\\_utils.py\", line 99, in inner\n    return call(*args, **kwargs)\n  File \"E:\\harbor_task\\harbor\\.venv\\Lib\\site-packages\\tenacity\\__init__.py\", line 400, in <lambda>\n    self._add_action_func(lambda rs: rs.outcome.result())\n                                     ~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\kmrak\\AppData\\Roaming\\uv\\python\\cpython-3.13.12-windows-x86_64-none\\Lib\\concurrent\\futures\\_base.py\", line 449, in result\n    return self.__get_result()\n           ~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\kmrak\\AppData\\Roaming\\uv\\python\\cpython-3.13.12-windows-x86_64-none\\Lib\\concurrent\\futures\\_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"E:\\harbor_task\\harbor\\.venv\\Lib\\site-packages\\tenacity\\asyncio\\__init__.py\", line 114, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"E:\\harbor_task\\harbor\\src\\harbor\\trial\\trial.py\", line 215, in _start_environment_with_retry\n    await asyncio.wait_for(\n    ...<4 lines>...\n    )\n  File \"C:\\Users\\kmrak\\AppData\\Roaming\\uv\\python\\cpython-3.13.12-windows-x86_64-none\\Lib\\asyncio\\tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"E:\\harbor_task\\harbor\\src\\harbor\\environments\\runloop.py\", line 273, in start\n    self._client = AsyncRunloopSDK(\n                   ~~~~~~~~~~~~~~~^\n        max_retries=100,\n        ^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"E:\\harbor_task\\harbor\\.venv\\Lib\\site-packages\\runloop_api_client\\sdk\\async_.py\", line 876, in __init__\n    self.api = AsyncRunloop(\n               ~~~~~~~~~~~~^\n        bearer_token=bearer_token,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n        http_client=http_client,\n        ^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"E:\\harbor_task\\harbor\\.venv\\Lib\\site-packages\\runloop_api_client\\_client.py\", line 299, in __init__\n    raise RunloopError(\n        \"The bearer_token client option must be set either by passing bearer_token to the client or by setting the RUNLOOP_API_KEY environment variable\"\n    )\nrunloop_api_client.RunloopError: The bearer_token client option must be set either by passing bearer_token to the client or by setting the RUNLOOP_API_KEY environment variable\n",
+        "occurred_at": "2026-02-15T19:38:33.031408"
+    },
+    "started_at": "2026-02-15T14:08:32.005729Z",
+    "finished_at": "2026-02-15T14:08:34.051583Z",
+    "environment_setup": {
+        "started_at": "2026-02-15T14:08:32.011391Z",
+        "finished_at": "2026-02-15T14:08:32.011657Z"
+    },
+    "agent_setup": null,
+    "agent_execution": null,
+    "verifier": null
+}
